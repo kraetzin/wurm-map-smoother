@@ -36,7 +36,7 @@ def get_preamble(mapfile):
     return data[0:1024]
 
 def smooth_map(mapdata):
-    sigma = [0.7, 0.7]
+    sigma = [0.8, 0.8]
     smoothdata = gaussian_filter(mapdata, sigma)
     return smoothdata
 
